@@ -2,6 +2,9 @@
 
 if ! command -v nmap  &> /dev/null
 then
+    echo "Updating repos"
+    sleep 3
+    sudo apt-get update
     echo "Installing Nmap"
     sleep 3
     sudo apt-get install nmap -y
